@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Free Society</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> <!-- TensorFlow.js -->
+</head>
+<body>
+    <header>
+        <h1>Drug Free Society</h1>
+        <p>AI-powered detection of oral drug usage through images</p>
+    </header>
+
+    <section class="upload-section">
+        <h2>Upload an Image</h2>
+        <input type="file" id="imageUpload" accept="image/*" onchange="loadImage(event)">
+        <img id="uploadedImage" style="display: none;" />
+        <button onclick="analyzeImage()">Analyze</button>
+        <div id="result"></div>
+    </section>
+
+    <section id="prediction-section">
+        <h3>AI Prediction Result:</h3>
+        <p id="prediction-text">No prediction yet.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Drug Free Society | Machine Learning for a Better Tomorrow</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
